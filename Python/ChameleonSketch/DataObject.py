@@ -7,6 +7,7 @@ class DataSubscriber(ABC):
     def on_value_changed(self, id: str):
         pass
 
+# final test
 class DataObject():
     def __init__(self, id: str, parent_path: str, config_path: str):
         self._id = id
