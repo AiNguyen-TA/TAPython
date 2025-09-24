@@ -1,0 +1,28 @@
+"SHorizontalBox":
+{
+    "Slots": [
+        {
+            "SDropTarget": {
+               "Aka": "Value",
+               "HAlign": "Center",
+               "OnDrop": "YourTool.on_drop_func(%**kwargs)",
+               "Content":
+               {
+                "SBox":
+                    {
+                        "Content": {
+                            "SEditableTextBox":
+                            {
+                                "IsReadOnly": true, 
+                                "Text": "Drag asset here"
+                            }
+                        }
+                    }
+               }
+            }
+        },
+        {
+            "SButton": { "Text": "Automatically create new" }
+        }
+    ]
+}

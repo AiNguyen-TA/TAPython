@@ -1,0 +1,113 @@
+{
+    "TabLabel": "Boss Wizard",
+    "InitPyCmd": "importlib.reload(ChameleonSketch.BossWizard); boss_wizard = ChameleonSketch.BossWizard.BossWizard(%JsonPath)",
+    "Root":
+    {
+        "SBox":
+        {
+            "Padding": 5,
+            "Content":
+            {
+                "SScrollBox":
+                {
+                    "Orientation": "Vertical",
+                    "Slots": [
+                        {
+                            "AutoHeight": true,
+                            "SHorizontalBox": 
+                            {
+                                "Slots": [
+                                    {
+                                        "SDropTarget": {
+                                        "HAlign": "Center",
+                                        "OnDrop": "boss_wizard.on_drop_base_class(%**kwargs)",
+                                        "Content":
+                                        {
+                                            "SEditableTextBox":
+                                            {
+                                                "Aka": "base-class-text",
+                                                "IsReadOnly": true,
+                                                "Text": "Drag your boss class here"
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "AutoWidth": true,
+                                    "Padding": [0, 0, 10, 0],
+                                    "SButton": {
+                                        "Aka": "browse-to-base-asset",
+                                        "Visibility": "Collapsed",
+                                        "ButtonColorAndOpacity": [0, 0.5, 1.5, 1],
+                                        "OnClick": "boss_wizard.sync_browser_to_base()",
+                                        "Content": {
+                                                "SImage": {
+                                                    "Image": {
+                                                        "Style": "FEditorStyle",
+                                                        "Brush": "SystemWideCommands.FindInContentBrowser.Small"
+                                                    },
+                                                    "DesiredSizeOverride": [23, 5]
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "Padding": [10, 0, 0, 0],
+                                        "AutoHeight": true,
+                                        "SVerticalBox":
+                                        {
+                                            "Slots": [
+                                                {
+                                                    "STextBlock":
+                                                    {
+                                                        "Text": "Or automatically create:"
+                                                    }
+                                                },
+                                                {
+                                                    "VAlign": "Center",
+                                                    "SEditableText":
+                                                    {
+                                                        "Aka": "enemy-name",
+                                                        "HintText": "Name",
+                                                        "ToolTipText": "This name also use to name other assets when automatically created"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "AutoHeight": true,
+                                        "AutoWidth": true,
+                                        "SBox": {
+                                            "WidthOverride": 100,
+                                            "HeightOverride": 20,
+                                            "Content": {
+                                                "SButton": {
+                                                    "HAlign": "Center",
+                                                    "VAlign": "Center",
+                                                    "ToolTipText": "Create enemy that inherits from template, use this if you don't know what you are doing 😘",
+                                                    "Text": "Create",
+                                                    "ButtonColorAndOpacity": [0, 3, 0, 1],
+                                                    "OnClick": "boss_wizard.on_request_create_base_asset()"
+                                            }
+                                        }
+                                    }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "SBox":
+                            {
+                                "Padding": [0, 20, 0, 0],
+                                "Aka": "main-content",
+                                "Content": {
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

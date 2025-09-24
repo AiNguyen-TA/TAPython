@@ -1,0 +1,28 @@
+{
+    "shortcuts": [
+        {
+            "actors": [],
+            "assets": [
+                "/Game/S2/Core/Enemy/BP_Enemy_PracticeDummy_LargeSize"
+            ],
+            "chameleon_json": "",
+            "drop_type": 4,
+            "folders": [],
+            "icon": "",
+            "py_cmd": "",
+            "text": "BP_"
+        },
+        {
+            "actors": [],
+            "assets": [
+                "/Game/S2/Core/Enemy/BP_EnemyCharacterBase"
+            ],
+            "chameleon_json": "",
+            "drop_type": 4,
+            "folders": [],
+            "icon": "",
+            "py_cmd": "",
+            "text": "BP_"
+        }
+    ]
+}

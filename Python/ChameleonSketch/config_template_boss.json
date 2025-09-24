@@ -1,0 +1,25 @@
+{
+    "baseClass": {
+        "assetPath": "/Game/S2/Core/Enemy/BP_EnemyCharacterBase",
+        "defaultDirectory": "/Game/S2/Core/Enemy"
+    },
+    "assetRefs": {
+        "behaviorTree": {
+            "description": "if defaultDirectory is not specified, will use baseClass's defaultDirectory",
+            "assetPath": "/Game/S2/BehaviorTrees/BT_EnemyGroupCombat",
+            "defaultDirectory": "/Game/S2/BehaviorTrees"
+        },
+        "Air Launch Reaction Monatge": {
+            "assetPath": "/Game/CombatFury/Demo_Assets/Mannequin/Animations/ParagonAnims/Combat/HitReactions/HitReact_Right_Montage"
+        },
+        "SkeletalMeshAsset": {
+            "assetPath": "/Game/CombatFury/Demo_Assets/Mannequin/Character/Mesh/SK_Mannequin"
+        },
+        "DodgeBackwards": {
+            "assetPath": "/Game/CombatFury/Demo_Assets/Mannequin/Character/Mesh/SK_Mannequin"
+        },
+        "DodgeRight": {
+            "assetPath": "/Game/CombatFury/Demo_Assets/Mannequin/Character/Mesh/SK_Mannequin"
+        }
+    }
+}

@@ -1,0 +1,38 @@
+﻿{
+	"TabLabel": "Chameleon Sketch",
+	"InitTabSize": [600, 600],
+	"InitTabPosition": [0, 0],
+	"InitPyCmd": "import ChameleonSketch, importlib; importlib.reload(ChameleonSketch); sketch = ChameleonSketch.ChameleonSketch.ChameleonSketch(%JsonPath); sketch.mark_python_ready()",
+	"Root":{
+		"SScrollBox": {
+			"Slots":
+			[
+				{
+					"SVerticalBox":
+					{
+						"Slots": [
+							{
+								"SButton": {
+									"Text": "Boss Wizard",
+									"OnClick": "unreal.ChameleonData.launch_chameleon_tool('./ChameleonSketch/BossWizard.json')"
+								}
+							},
+							{
+								"SButton": { "Text": "Label" }
+							},
+							{
+								"SBox": {
+									"Aka": "main-content",
+									"AutoHeight": true,
+									"Content":{
+									}
+								}
+							}
+						]
+					}
+				}
+			]
+		}
+}
+}
+
